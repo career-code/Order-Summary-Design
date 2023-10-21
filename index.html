@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary Design</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+            width: 100%;
+            height: 700px;
+            font-family: cursive;
+            /* background: linear-gradient(to right, #aa076b, #61045f); */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .container {
+            margin-top: 60px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            width: 360px;
+            height: 550px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* border: 3px solid black; */
+        }
+
+        img {
+            /* margin-top: 20px; */
+            width: 360px;
+            height: 180px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            /* box-shadow: 0 45px 65px rgba(0, 0, 0, 0.50), 0 35px 22px rgba(0, 0, 0, 0.16); */
+        }
+
+        .text {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .heading {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+
+        .detail {
+            font-size: 16px;
+            letter-spacing: -1px;
+            color: #7d889e;
+            padding: 0px 35px;
+        }
+
+        .main-box {
+            display: flex;
+            width: 280px;
+            height: 70px;
+            /* border: 3px solid black; */
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: hsla(225, 100%, 94%, 0.453);
+        }
+
+        .icon-box-left {
+            display: flex;
+        }
+
+        .icon-img {
+            width: 50px;
+            height: 50px;
+            margin-top: 9px;
+            margin-left: 7px;
+        }
+
+        .plan-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 12px;
+            gap: 4px;
+            font-size: 10px;
+        }
+
+        .plan-details p {
+            color: #7d889e;
+        }
+
+        .change-box-right {
+            display: flex;
+            align-items: center;
+            margin-left: 62px;
+        }
+
+        .change-box-right a {
+            color: hsl(245, 75%, 52%);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            all: unset;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 700;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding: 12px;
+        }
+
+        .payment-btn {
+            width: 249px;
+            margin-top: 20px;
+            background: hsl(245, 75%, 52%);
+            color: white;
+            box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+        }
+
+        .cancel-btn {
+            color: #7d889e;
+        }
+
+        footer {
+            width: 100%;
+            text-align: right;
+            position: fixed;
+            bottom: 0;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="illustration-hero.svg" alt="image">
+        <div class="text">
+            <h2 class="heading">Order Summary</h2>
+            <p class="detail">You can now listen to millions of songs,audiobooks,and podcasts on any device anywhere you
+                like!</p>
+        </div>
+        <div class="main-box">
+            <div class="icon-box-left">
+                <img class="icon-img" src="icon-music.svg" alt="image">
+                <div class="plan-details">
+                    <h2>Annual Plan</h2>
+                    <p>$59.99/year</p>
+                </div>
+            </div>
+            <div class="change-box-right">
+                <a href="#">Change</a>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn payment-btn">Proceed to Payment</button>
+            <button class="btn cancel-btn">Cancel Order</button>
+        </div>
+    </div>
+
+    <footer>
+        ❤️Aliyan Ahmad❤️
+    </footer>
+</body>
+
+</html>
